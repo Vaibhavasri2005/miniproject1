@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+  color: pink;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen center */
+  text-align: center;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.answer-btn {
+  width: 220px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.answer-btn.correct {
+  background-color: green;
+  color: white;
+}
+
+.answer-btn.wrong {
+  background-color: red;
+  color: white;
+}
+
+.next-btn,
+.restart-btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff69b4;
+}
+
+.loading {
+  font-size: 24px;
+  color: pink;
+}
