@@ -13,7 +13,7 @@ function Quiz() {
   const [showNext, setShowNext] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:4000/questions")
+    fetch(`${process.env.REACT_APP_API_URL}/questions`)
       .then((res) => res.json())
       .then((data) => {
         setQuestions(data);
